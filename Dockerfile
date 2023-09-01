@@ -12,7 +12,7 @@ COPY package.json .
 COPY yarn.lock .
 RUN yarn install
 
-# add app
+# 현재 디렉토리의 모든 파일을 도커 컨테이너의 워킹 디렉토리에 복사한다.
 COPY . .
 
 # start app
